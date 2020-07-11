@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF2BA10D24B94F1700208FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA10C24B94F1700208FED /* AppDelegate.swift */; };
+		AF2BA10F24B94F1700208FED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA10E24B94F1700208FED /* SceneDelegate.swift */; };
+		AF2BA11124B94F1700208FED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA11024B94F1700208FED /* ContentView.swift */; };
+		AF2BA11324B94F2200208FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2BA11224B94F2200208FED /* Assets.xcassets */; };
+		AF2BA11624B94F2200208FED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2BA11524B94F2200208FED /* Preview Assets.xcassets */; };
+		AF2BA11924B94F2200208FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2BA11724B94F2200208FED /* LaunchScreen.storyboard */; };
+		AF2BA12424B94F2200208FED /* WimbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA12324B94F2200208FED /* WimbTests.swift */; };
+		AF2BA12F24B94F2300208FED /* WimbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA12E24B94F2300208FED /* WimbUITests.swift */; };
+		AF2BA14524B951A200208FED /* NetworkRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA14424B951A200208FED /* NetworkRequestService.swift */; };
+		AF2BA14824B9525B00208FED /* NextBusEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA14724B9525B00208FED /* NextBusEndPoint.swift */; };
+		AF2BA14A24B956B300208FED /* Agency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA14924B956B300208FED /* Agency.swift */; };
+		AF2BA14C24B9595700208FED /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA14B24B9595700208FED /* Route.swift */; };
+		AF2BA14E24B9811D00208FED /* AgencyListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA14D24B9811D00208FED /* AgencyListInteractor.swift */; };
+		AF2BA15024B98B2300208FED /* AgencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA14F24B98B2300208FED /* AgencyList.swift */; };
+		AF2BA15224B98BD900208FED /* AgencyListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA15124B98BD900208FED /* AgencyListPresenter.swift */; };
+		AF2BA15424B98C4700208FED /* AgencyListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA15324B98C4700208FED /* AgencyListRouter.swift */; };
+		AF2BA15624B995AD00208FED /* AgencyListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA15524B995AD00208FED /* AgencyListCell.swift */; };
+		AF2BA15824B9E02100208FED /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BA15724B9E02100208FED /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF2BA12024B94F2200208FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF2BA10124B94F1700208FED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF2BA10824B94F1700208FED;
+			remoteInfo = Wimb;
+		};
+		AF2BA12B24B94F2300208FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF2BA10124B94F1700208FED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF2BA10824B94F1700208FED;
+			remoteInfo = Wimb;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF2BA10924B94F1700208FED /* Wimb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wimb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2BA10C24B94F1700208FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF2BA10E24B94F1700208FED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AF2BA11024B94F1700208FED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF2BA11224B94F2200208FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF2BA11524B94F2200208FED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF2BA11824B94F2200208FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF2BA11A24B94F2200208FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF2BA11F24B94F2200208FED /* WimbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WimbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2BA12324B94F2200208FED /* WimbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WimbTests.swift; sourceTree = "<group>"; };
+		AF2BA12524B94F2200208FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF2BA12A24B94F2300208FED /* WimbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WimbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2BA12E24B94F2300208FED /* WimbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WimbUITests.swift; sourceTree = "<group>"; };
+		AF2BA13024B94F2300208FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF2BA14424B951A200208FED /* NetworkRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestService.swift; sourceTree = "<group>"; };
+		AF2BA14724B9525B00208FED /* NextBusEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBusEndPoint.swift; sourceTree = "<group>"; };
+		AF2BA14924B956B300208FED /* Agency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agency.swift; sourceTree = "<group>"; };
+		AF2BA14B24B9595700208FED /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		AF2BA14D24B9811D00208FED /* AgencyListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyListInteractor.swift; sourceTree = "<group>"; };
+		AF2BA14F24B98B2300208FED /* AgencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyList.swift; sourceTree = "<group>"; };
+		AF2BA15124B98BD900208FED /* AgencyListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyListPresenter.swift; sourceTree = "<group>"; };
+		AF2BA15324B98C4700208FED /* AgencyListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyListRouter.swift; sourceTree = "<group>"; };
+		AF2BA15524B995AD00208FED /* AgencyListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyListCell.swift; sourceTree = "<group>"; };
+		AF2BA15724B9E02100208FED /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF2BA10624B94F1700208FED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2BA11C24B94F2200208FED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2BA12724B94F2300208FED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF2BA10024B94F1700208FED = {
+			isa = PBXGroup;
+			children = (
+				AF2BA10B24B94F1700208FED /* Wimb */,
+				AF2BA12224B94F2200208FED /* WimbTests */,
+				AF2BA12D24B94F2300208FED /* WimbUITests */,
+				AF2BA10A24B94F1700208FED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF2BA10A24B94F1700208FED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BA10924B94F1700208FED /* Wimb.app */,
+				AF2BA11F24B94F2200208FED /* WimbTests.xctest */,
+				AF2BA12A24B94F2300208FED /* WimbUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF2BA10B24B94F1700208FED /* Wimb */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BA13C24B950E700208FED /* App */,
+				AF2BA10C24B94F1700208FED /* AppDelegate.swift */,
+				AF2BA10E24B94F1700208FED /* SceneDelegate.swift */,
+				AF2BA11024B94F1700208FED /* ContentView.swift */,
+				AF2BA11224B94F2200208FED /* Assets.xcassets */,
+				AF2BA11724B94F2200208FED /* LaunchScreen.storyboard */,
+				AF2BA11A24B94F2200208FED /* Info.plist */,
+				AF2BA11424B94F2200208FED /* Preview Content */,
+			);
+			path = Wimb;
+			sourceTree = "<group>";
+		};
+		AF2BA11424B94F2200208FED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BA11524B94F2200208FED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF2BA12224B94F2200208FED /* WimbTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BA12324B94F2200208FED /* WimbTests.swift */,
+				AF2BA12524B94F2200208FED /* Info.plist */,
+			);
+			path = WimbTests;
+			sourceTree = "<group>";
+		};
+		AF2BA12D24B94F2300208FED /* WimbUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BA12E24B94F2300208FED /* WimbUITests.swift */,
+				AF2BA13024B94F2300208FED /* Info.plist */,
+			);
+			path = WimbUITests;
+			sourceTree = "<group>";
+		};
+		AF2BA13C24B950E700208FED /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BA14324B9513B00208FED /* Common */,
+				AF2BA14124B9511500208FED /* Network */,
+				AF2BA14224B9512A00208FED /* Presenter */,
+				AF2BA14024B9510E00208FED /* Entity */,
+				AF2BA13F24B9510400208FED /* Router */,
+				AF2BA13E24B950F500208FED /* Interactor */,
+				AF2BA13D24B950EF00208FED /* View */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AF2BA13D24B950EF00208FED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BA14F24B98B2300208FED /* AgencyList.swift */,
+				AF2BA15524B995AD00208FED /* AgencyListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF2BA13E24B950F500208FED /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BA14D24B9811D00208FED /* AgencyListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		AF2BA13F24B9510400208FED /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BA15324B98C4700208FED /* AgencyListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AF2BA14024B9510E00208FED /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BA14924B956B300208FED /* Agency.swift */,
+				AF2BA14B24B9595700208FED /* Route.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		AF2BA14124B9511500208FED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BA14424B951A200208FED /* NetworkRequestService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AF2BA14224B9512A00208FED /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BA15124B98BD900208FED /* AgencyListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AF2BA14324B9513B00208FED /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BA14624B9524200208FED /* NexBus */,
+				AF2BA15724B9E02100208FED /* Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AF2BA14624B9524200208FED /* NexBus */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BA14724B9525B00208FED /* NextBusEndPoint.swift */,
+			);
+			path = NexBus;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF2BA10824B94F1700208FED /* Wimb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF2BA13324B94F2300208FED /* Build configuration list for PBXNativeTarget "Wimb" */;
+			buildPhases = (
+				AF2BA10524B94F1700208FED /* Sources */,
+				AF2BA10624B94F1700208FED /* Frameworks */,
+				AF2BA10724B94F1700208FED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wimb;
+			productName = Wimb;
+			productReference = AF2BA10924B94F1700208FED /* Wimb.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF2BA11E24B94F2200208FED /* WimbTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF2BA13624B94F2300208FED /* Build configuration list for PBXNativeTarget "WimbTests" */;
+			buildPhases = (
+				AF2BA11B24B94F2200208FED /* Sources */,
+				AF2BA11C24B94F2200208FED /* Frameworks */,
+				AF2BA11D24B94F2200208FED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF2BA12124B94F2200208FED /* PBXTargetDependency */,
+			);
+			name = WimbTests;
+			productName = WimbTests;
+			productReference = AF2BA11F24B94F2200208FED /* WimbTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF2BA12924B94F2300208FED /* WimbUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF2BA13924B94F2300208FED /* Build configuration list for PBXNativeTarget "WimbUITests" */;
+			buildPhases = (
+				AF2BA12624B94F2300208FED /* Sources */,
+				AF2BA12724B94F2300208FED /* Frameworks */,
+				AF2BA12824B94F2300208FED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF2BA12C24B94F2300208FED /* PBXTargetDependency */,
+			);
+			name = WimbUITests;
+			productName = WimbUITests;
+			productReference = AF2BA12A24B94F2300208FED /* WimbUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF2BA10124B94F1700208FED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Himanshu Tantia";
+				TargetAttributes = {
+					AF2BA10824B94F1700208FED = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					AF2BA11E24B94F2200208FED = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = AF2BA10824B94F1700208FED;
+					};
+					AF2BA12924B94F2300208FED = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = AF2BA10824B94F1700208FED;
+					};
+				};
+			};
+			buildConfigurationList = AF2BA10424B94F1700208FED /* Build configuration list for PBXProject "Wimb" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF2BA10024B94F1700208FED;
+			productRefGroup = AF2BA10A24B94F1700208FED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF2BA10824B94F1700208FED /* Wimb */,
+				AF2BA11E24B94F2200208FED /* WimbTests */,
+				AF2BA12924B94F2300208FED /* WimbUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF2BA10724B94F1700208FED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2BA11924B94F2200208FED /* LaunchScreen.storyboard in Resources */,
+				AF2BA11624B94F2200208FED /* Preview Assets.xcassets in Resources */,
+				AF2BA11324B94F2200208FED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2BA11D24B94F2200208FED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2BA12824B94F2300208FED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF2BA10524B94F1700208FED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2BA15024B98B2300208FED /* AgencyList.swift in Sources */,
+				AF2BA15224B98BD900208FED /* AgencyListPresenter.swift in Sources */,
+				AF2BA10D24B94F1700208FED /* AppDelegate.swift in Sources */,
+				AF2BA14C24B9595700208FED /* Route.swift in Sources */,
+				AF2BA10F24B94F1700208FED /* SceneDelegate.swift in Sources */,
+				AF2BA14E24B9811D00208FED /* AgencyListInteractor.swift in Sources */,
+				AF2BA15624B995AD00208FED /* AgencyListCell.swift in Sources */,
+				AF2BA15424B98C4700208FED /* AgencyListRouter.swift in Sources */,
+				AF2BA15824B9E02100208FED /* Extensions.swift in Sources */,
+				AF2BA14524B951A200208FED /* NetworkRequestService.swift in Sources */,
+				AF2BA11124B94F1700208FED /* ContentView.swift in Sources */,
+				AF2BA14A24B956B300208FED /* Agency.swift in Sources */,
+				AF2BA14824B9525B00208FED /* NextBusEndPoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2BA11B24B94F2200208FED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2BA12424B94F2200208FED /* WimbTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2BA12624B94F2300208FED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2BA12F24B94F2300208FED /* WimbUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF2BA12124B94F2200208FED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF2BA10824B94F1700208FED /* Wimb */;
+			targetProxy = AF2BA12024B94F2200208FED /* PBXContainerItemProxy */;
+		};
+		AF2BA12C24B94F2300208FED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF2BA10824B94F1700208FED /* Wimb */;
+			targetProxy = AF2BA12B24B94F2300208FED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF2BA11724B94F2200208FED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF2BA11824B94F2200208FED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF2BA13124B94F2300208FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF2BA13224B94F2300208FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF2BA13424B94F2300208FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Wimb/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Wimb/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Wimb";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF2BA13524B94F2300208FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Wimb/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Wimb/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Wimb";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF2BA13724B94F2300208FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WimbTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.WimbTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wimb.app/Wimb";
+			};
+			name = Debug;
+		};
+		AF2BA13824B94F2300208FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WimbTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.WimbTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wimb.app/Wimb";
+			};
+			name = Release;
+		};
+		AF2BA13A24B94F2300208FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WimbUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.WimbUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wimb;
+			};
+			name = Debug;
+		};
+		AF2BA13B24B94F2300208FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WimbUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.WimbUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wimb;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF2BA10424B94F1700208FED /* Build configuration list for PBXProject "Wimb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2BA13124B94F2300208FED /* Debug */,
+				AF2BA13224B94F2300208FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF2BA13324B94F2300208FED /* Build configuration list for PBXNativeTarget "Wimb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2BA13424B94F2300208FED /* Debug */,
+				AF2BA13524B94F2300208FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF2BA13624B94F2300208FED /* Build configuration list for PBXNativeTarget "WimbTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2BA13724B94F2300208FED /* Debug */,
+				AF2BA13824B94F2300208FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF2BA13924B94F2300208FED /* Build configuration list for PBXNativeTarget "WimbUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2BA13A24B94F2300208FED /* Debug */,
+				AF2BA13B24B94F2300208FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF2BA10124B94F1700208FED /* Project object */;
+}
