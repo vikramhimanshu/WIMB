@@ -13,7 +13,9 @@ struct AgencyList: View {
     
     var body: some View {
         List (presenter.agencies) { agency in
-            AgencyListCell(agency: agency)
+            self.presenter.linkBuilder(for: agency) {
+                AgencyListCell(agency: agency)
+            }
         }
     }
 }
